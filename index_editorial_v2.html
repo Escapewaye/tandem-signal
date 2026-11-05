@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TANDEM SIGNAL — Learn. Earn. Evolve.</title>
+<meta name="description" content="Knowledge for people building what's next. Business, technology, money and modern life.">
+<style>
+:root{--bg:#050606;--panel:#101315;--line:#354047;--green:#a6ff45;--muted:#aeb8bd;--white:#f4f7f8;--chrome:#dce4e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{border-bottom:1px solid #1c251f;position:sticky;top:0;background:#070908eF;backdrop-filter:blur(14px);z-index:5}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.12em;font-size:13px}
+.mark{width:44px;height:44px;border:1px solid #dce4e9;border-radius:10px;display:grid;place-items:center;font-weight:1000;font-size:19px;letter-spacing:-.13em;background:linear-gradient(145deg,#fff 0%,#8c989f 17%,#f8ffff 29%,#59646b 46%,#e8eef2 58%,#7a858c 75%,#f9ffff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 18px #d8e6ef35;box-shadow:inset 0 0 15px #dce4e922,0 0 22px #a6ff4510}
+.links{display:flex;gap:28px;color:#c1cbc4;font-size:13px}.links a:hover{color:var(--green)}
+.pill{border:1px solid #7c898f;padding:11px 16px;border-radius:3px;color:var(--green);box-shadow:inset 0 1px 0 #ffffff18;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.hero{padding:104px 0 88px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 45%,#a6ff4510 0,transparent 34%),linear-gradient(115deg,transparent 55%,#dce4e907 75%,transparent 90%)}.hero:after{content:"TS";position:absolute;right:-25px;top:35px;font-size:clamp(220px,35vw,440px);line-height:1;font-weight:1000;letter-spacing:-.16em;pointer-events:none;background:linear-gradient(160deg,#fff 0%,#77838b 13%,#faffff 24%,#4d5961 39%,#e8eef2 50%,#89969e 65%,#fff 78%,#69757d 100%);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.13;filter:drop-shadow(0 12px 25px #000);z-index:0}.hero>*{position:relative;z-index:1}
+.kicker{color:var(--green);font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:750}
+h1{font-size:clamp(48px,8vw,96px);line-height:.94;letter-spacing:-.075em;max-width:800px;margin:22px 0 25px}
+h1 span{background:linear-gradient(100deg,#f8ffff 0%,#89959d 18%,#fff 31%,#69757d 49%,#eaf1f5 63%,#7f8b92 80%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 8px 28px #dce4e91c}.lead{max-width:560px;color:var(--muted);font-size:18px;line-height:1.7}
+.actions{display:flex;gap:14px;align-items:center;margin-top:34px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 20px;background:var(--green);color:#10150c;font-weight:850;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--green)}.btn.secondary{background:transparent;color:var(--white);border-color:#46534a}
+.meta{margin-top:70px;display:flex;gap:34px;flex-wrap:wrap;color:#8e9b92;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.meta b{color:#e7eee8;font-weight:650}
+section{padding:76px 0;border-top:1px solid #1c251f}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.06em;margin:10px 0 0}.section-head p{max-width:390px;color:var(--muted);line-height:1.6;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile{background:linear-gradient(145deg,#171c1e,#0b0f10);border:1px solid var(--line);padding:24px;min-height:190px;box-shadow:inset 0 1px 0 #ffffff0c;display:flex;flex-direction:column;justify-content:space-between}.num{color:var(--green);font-size:11px;letter-spacing:.16em}.tile h3{font-size:21px;margin:0 0 8px}.tile p{color:var(--muted);font-size:13px;line-height:1.55;margin:0}
+.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}.featurebox{border:1px solid #65727a;background:radial-gradient(circle at 80% 20%,#29421d 0,#101711 34%,#090d0a 75%);padding:34px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 1px 0 #ffffff20,0 20px 70px #0008}.featurebox .ts{font-size:clamp(90px,13vw,150px);font-weight:1000;letter-spacing:-.16em;background:linear-gradient(145deg,#fff 0%,#7e8b93 14%,#faffff 27%,#4c5860 43%,#e9f0f4 55%,#87949c 72%,#fff 86%,#657179 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 12px 18px #000) drop-shadow(0 0 20px #dce4e91c)}.feature h2{max-width:520px}.feature p{color:var(--muted);line-height:1.75}.note{color:#8f9b92;font-size:12px;line-height:1.6}
+footer{padding:32px 0;border-top:1px solid #1c251f;color:#839087;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.links{display:none}.hero{padding:76px 0 65px}.grid{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.wrap{width:min(100% - 30px,1120px)}}
+
+.articles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.story{border:1px solid var(--line);background:linear-gradient(150deg,#151a1c,#080b0a);padding:24px;display:flex;flex-direction:column;min-height:100%}
+.story .num{margin-bottom:22px}.story h3{font-size:24px;line-height:1.08;letter-spacing:-.045em;margin:0 0 12px}
+.story p{color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 18px}
+.story details{margin-top:auto;border-top:1px solid #354047;padding-top:15px}
+.story summary{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;list-style:none}
+.story summary::-webkit-details-marker{display:none}
+.story summary:after{content:" +";font-size:16px}
+.story details[open] summary:after{content:" −"}
+.story .body{padding-top:16px;color:#c3cccf;font-size:13px;line-height:1.75}
+.story .body h4{color:var(--white);font-size:14px;margin:18px 0 6px}
+.story .body ul{padding-left:18px}
+.story .takeaway{border-left:2px solid var(--green);padding:10px 0 10px 13px;color:#eff6e9;margin-top:16px}
+@media(max-width:760px){.articles{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#"><span class="mark">TS</span><span>TANDEM SIGNAL</span></a>
+<div class="links"><a href="#focus">Focus</a><a href="#approach">Our approach</a><a href="#articles">Articles</a><a href="#guides">Guides</a></div>
+<a class="pill" href="#articles">Explore the signal ↗</a>
+</nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero" style="border:0">
+<div class="kicker">Independent thinking. Practical knowledge.</div><div style="display:inline-flex;gap:8px;align-items:center;margin-top:18px;border:1px solid #66737b;padding:7px 11px;color:#d9e1e5;font-size:10px;letter-spacing:.2em;text-transform:uppercase;background:linear-gradient(110deg,#ffffff12,#ffffff02)"> <span style="color:#a6ff45">●</span> Chrome / Signal Edition</div>
+<h1>See the signal.<br><span>Ignore the noise.</span></h1>
+<p class="lead">Clear ideas for people building what's next. Explore business, technology, money and modern life—with practical insight you can put to work.</p>
+<div class="actions"><a class="btn" href="#articles">Read the latest</a><a class="btn secondary" href="#approach">What we believe</a></div>
+<div class="meta"><span><b>01</b> Learn with intent</span><span><b>02</b> Build with purpose</span><span><b>03</b> Evolve continuously</span></div>
+</section>
+<section id="focus">
+<div class="section-head"><div><div class="kicker">The four signals</div><h2>Knowledge with a purpose.</h2></div><p>Useful ideas, thoughtfully selected and translated into practical next steps.</p></div>
+<div class="grid">
+<a class="tile" href="#business"><span class="num">01 / BUSINESS ↗</span><div><h3>Build smarter.</h3><p>Entrepreneurship, business models and creating value.</p></div></a>
+<a class="tile" href="#technology"><span class="num">02 / TECHNOLOGY ↗</span><div><h3>Understand what's next.</h3><p>AI, useful tools and the technologies changing work.</p></div></a>
+<a class="tile" href="#money"><span class="num">03 / MONEY ↗</span><div><h3>Make informed moves.</h3><p>Financial literacy, earning, saving and decision-making.</p></div></a>
+<a class="tile" href="#modern-life"><span class="num">04 / MODERN LIFE ↗</span><div><h3>Stay curious.</h3><p>Ideas, habits and discoveries for a changing world.</p></div></a>
+</div>
+</section>
+<section id="approach">
+<div class="feature">
+<div><div class="kicker">Our approach</div><h2>Less hype.<br>More useful signal.</h2><p>We believe good information should do more than grab attention. It should help you ask better questions, make clearer decisions and take a meaningful next step.</p><p class="note">TANDEM SIGNAL is an independent project in development. We verify claims, distinguish facts from opinion, and aim to make every guide genuinely useful.</p></div>
+<div class="featurebox"><div class="kicker">The principle</div><div class="ts">TS</div><div style="letter-spacing:.2em;font-size:12px;color:var(--green)">LEARN. EARN. EVOLVE.</div></div>
+</div>
+</section>
+
+<section id="articles">
+<div class="section-head"><div><div class="kicker">The editorial desk / 001</div><h2>Three ideas worth your attention.</h2></div><p>Short, practical reads designed to help you make a better next move. Open any story to read the full guide.</p></div>
+<div class="articles">
+<article class="story" id="business">
+<span class="num">01 / BUSINESS · FIELD NOTES</span>
+<h3>Before you build a business, test the problem.</h3>
+<p>A strong business idea starts with a real problem—not a logo, a website or a complicated plan.</p>
+<details><summary>Read the article</summary><div class="body">
+<p>It is tempting to begin with the visible parts of a business: a name, colors, social accounts and a polished website. Those things can help later. First, find out whether anyone actually needs what you want to offer.</p>
+<h4>1. Describe the problem in one sentence</h4>
+<p>Be specific about who has the problem, what makes it frustrating, and what they currently do about it. “People need help with marketing” is broad. “Independent tutors struggle to turn one-time students into repeat bookings” is testable.</p>
+<h4>2. Look for existing behavior</h4>
+<p>Search forums, reviews, community discussions and competitor feedback. Pay attention to people spending time or money to solve the problem already. Complaints are clues, but repeated behavior is stronger evidence.</p>
+<h4>3. Talk to potential customers</h4>
+<p>Ask about their last experience with the problem. What did they try? What did it cost? What was still missing? Avoid leading questions like “Would you buy my idea?” Compliments are not the same as demand.</p>
+<h4>4. Offer the smallest useful solution</h4>
+<p>Before building a large product, test a simple service, sample, checklist or paid pilot. Set a clear price and see whether someone is willing to take the next step.</p>
+<div class="takeaway"><strong>The signal:</strong> Validate the problem and willingness to pay before investing heavily in the solution.</div>
+</div></details>
+</article>
+<article class="story" id="technology">
+<span class="num">02 / TECHNOLOGY · PRACTICAL AI</span>
+<h3>Use AI like a capable assistant—not an autopilot.</h3>
+<p>AI can speed up research and production, but a useful workflow still needs human judgment.</p>
+<details><summary>Read the article</summary><div class="body">
+<p>AI tools are good at turning a clear brief into a first draft, organizing information, generating alternatives and handling repetitive steps. They can also confidently produce errors, outdated claims or details that sound plausible but are unsupported.</p>
+<h4>1. Give it a defined job</h4>
+<p>Instead of asking “build my business,” ask for a competitor comparison, a customer interview script, a first draft of an FAQ or a checklist for reviewing a landing page. Narrow tasks are easier to evaluate.</p>
+<h4>2. Supply context and constraints</h4>
+<p>Explain the audience, goal, tone, budget, deadline and what the tool must not assume. Ask it to label unknowns rather than fill gaps with guesses.</p>
+<h4>3. Verify important claims</h4>
+<p>Check numbers, laws, prices, product features, quotations and health or financial claims against reliable primary sources. Do not publish an AI answer simply because it reads smoothly.</p>
+<h4>4. Keep a human approval step</h4>
+<p>Review the output for accuracy, originality, privacy and usefulness. Never paste private customer data or confidential information into a tool unless you understand its data handling and have permission.</p>
+<h4>A simple repeatable workflow</h4>
+<ul><li>Brief: define one outcome.</li><li>Draft: ask AI for a structured first version.</li><li>Check: verify facts and remove unsupported claims.</li><li>Improve: edit for clarity and usefulness.</li><li>Approve: publish only after a person reviews it.</li></ul>
+<div class="takeaway"><strong>The signal:</strong> Automate repetition, not responsibility. AI should increase your capacity—not replace your judgment.</div>
+</div></details>
+</article>
+<article class="story" id="money">
+<span class="num">03 / MONEY · MONEY BASICS</span>
+<h3>Revenue is not profit—and profit is not cash.</h3>
+<p>Knowing the difference can prevent a growing business from running out of money.</p>
+<details><summary>Read the article</summary><div class="body">
+<p>Three numbers can tell very different stories. Revenue is the money earned from sales before expenses. Profit is what remains after the relevant expenses are subtracted. Cash flow tracks money actually moving into and out of the business over time.</p>
+<h4>A simple example</h4>
+<p>Imagine a small business makes $2,000 in sales during a month. It has $1,200 in expenses, so its simplified profit is $800. But if customers have only paid $1,400 so far and the business has already paid $1,000 in bills, its cash position is not the same thing as its reported profit.</p>
+<h4>Why the distinction matters</h4>
+<ul><li><strong>Revenue:</strong> helps show sales activity and demand.</li><li><strong>Profit:</strong> helps show whether the business is economically sustainable.</li><li><strong>Cash flow:</strong> helps show whether it can pay bills when they come due.</li></ul>
+<h4>Build a basic weekly habit</h4>
+<p>Track sales collected, unpaid invoices, bills due, recurring costs and the cash available. Keep business and personal transactions separate where possible, and set aside money for taxes according to your local rules. A qualified tax professional can help with your specific situation.</p>
+<div class="takeaway"><strong>The signal:</strong> A business can show a profit on paper and still face a cash shortage. Track all three measures.</div>
+</div></details>
+</article>
+</div>
+<p class="note" style="margin-top:18px">Editorial note: These are educational starting points, not individualized legal, tax, investment or financial advice. Verify details that depend on your location and circumstances.</p>
+</section>
+
+<section id="guides">
+<div class="section-head"><div><div class="kicker">The toolkit / next release</div><h2>Go from insight to action.</h2></div><p>Our first downloadable resource is being developed to turn these principles into a practical step-by-step process.</p></div>
+<div class="tile" style="min-height:160px"><span class="num">FIRST FIELD GUIDE / IN DEVELOPMENT</span><div><h3>The Zero-to-One AI Business Kit</h3><p>A grounded starter toolkit for researching, testing and launching a small business with free or low-cost tools.</p></div></div>
+</section>
+</div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 TANDEM SIGNAL — WORKING BRAND</span><span>LEARN. EARN. EVOLVE.</span></div></footer>
+</body></html>
