@@ -6,14 +6,10 @@
   <title>TANDEM SIGNAL - Learn. Earn. Evolve.</title>
   <meta name="description" content="Knowledge for modern creators and builders.">
   
-  <!-- Load Gumroad Script inside Head -->
+  <!-- Load Gumroad Script -->
   <script src="https://gumroad.com/js/gumroad.js"></script>
 
-  <style> 
-    .wrap { max-width: 800px; margin: 0 auto; }
-    .gumroad-button span { display: none !important; }
-  </style>
-
+  <style>
     :root {
       --bg: #050606;
       --panel: #101315;
@@ -21,9 +17,12 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { background-color: var(--bg); color: #FFFFFF; font-family: sans-serif; margin: 0; padding: 40px; text-align: center; }
+    body { background-color: var(--bg); color: #FFFFFF; font-family: sans-serif; margin: 0; }
     a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 800px; margin: 0 auto; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 20px; }
+    
+    /* Hides the default Gumroad logo/subtext */
+    .gumroad-button span { display: none !important; }
   </style>
 </head>
 
